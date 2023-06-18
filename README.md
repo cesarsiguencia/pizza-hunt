@@ -12,6 +12,7 @@ Users are able to
 - Express
 - Mongoose
 - NoSQL
+- IndexedDB for offline functionality
 
 ### Tables/Models in Database
 - Pizza
