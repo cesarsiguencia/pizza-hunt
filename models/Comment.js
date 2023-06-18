@@ -1,7 +1,6 @@
 const { Schema, model, Types } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
-// the reply schema needs to be above comments since replies are for comments and replies have no model
 const ReplySchema = new Schema(
   {
     // set custom id to avoid confusion with parent comment _id

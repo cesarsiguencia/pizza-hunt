@@ -10,6 +10,7 @@ Users are able to
 
 ### Technologies Used
 - Express
+- NoSQL with MongoDB
 - Mongoose
 - NoSQL
 - IndexedDB for offline functionality
@@ -20,8 +21,8 @@ Users are able to
 
 ### Installation
 1. Git clone of download the application and load on VSCode.
-2. Run 'npm start' and load on localhost:3301
-3. The application should not have any data. Begin adding pizzas at your will!
+2. Run 'npm i', then 'npm start' and load on localhost:3301 on the browser
+3. Begin adding pizzas at your will!
 
 ### Screenshots
 

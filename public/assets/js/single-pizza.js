@@ -9,14 +9,11 @@ const $newCommentForm = document.querySelector('#new-comment-form');
 
 let pizzaId;
 function getPizza() {
-  // get id of pizza
   const searchParams = new URLSearchParams(document.location.search.substring(1));
   const pizzaId = searchParams.get('id');
 
-  // get pizzaInfo
   fetch(`/api/pizzas/${pizzaId}`)
     .then(response => {
-           // check for a 4xx or 5xx error from server
            if (!response.ok) {
             throw new Error({ message: 'Something went wrong!' });
           }
@@ -53,7 +50,6 @@ function printPizza(pizzaData) {
 }
 
 function printComment(comment) {
-  // make div to hold comment and subcomments
   const commentDiv = document.createElement('div');
   commentDiv.classList.add('my-2', 'card', 'p-2', 'w-100', 'text-dark', 'rounded');
 

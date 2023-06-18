@@ -1,6 +1,5 @@
 const $pizzaList = document.querySelector('#pizza-list');
 
-//needs to be before printPizza so that it can call, then print
 const getPizzaList = () => {
   fetch('/api/pizzas')
     .then(response => response.json())
